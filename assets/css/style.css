@@ -1,0 +1,80 @@
+html {
+    margin: 0;
+    padding: 0;
+    border: 33px solid transparent;
+    border-image: url(../img/border.png) 33 round;
+    box-sizing: border-box;
+    height: 100%;
+    background: #ffc21c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-container {
+    background-color: #1c67a8;
+    background-size: contain;
+    padding: 40px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+div#medalhas {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+div#medalhas h1 {
+    padding: 0;
+    margin: 0;
+    margin-left: 0px;
+    font-size: 50px;
+    color: white;
+}
+
+div#medalhas h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+div#medalhas img {
+    margin-left: 10px;
+    margin-right: 0px;
+    padding: 0px;
+    max-height: 120px;
+}
+
+div#ouro h1 {
+    color: #ffc21c;
+}
+
+div#prata h1 {
+    color: #C0C0C0;
+}
+
+div#bronze h1 {
+    color: #CD7F32;
+}
+
+.timers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.timers div {
+    width: 100%;
+}
