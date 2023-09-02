@@ -1,14 +1,15 @@
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
     background: #ffc21c;
+    border: 20px solid #00a859;
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    
 }
 
 .background-container {
@@ -192,3 +193,57 @@ img {
     width: 100px;
     background-color: #000000;
   }
+
+  @media screen and (max-width: 768px) {
+    .background-container {
+      width: 100%; 
+      padding: 20px; 
+    }
+  
+    div#medalhas {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center;
+    }
+  
+    div#medalhas img {
+      margin-left: 0; 
+      margin-right: 0; 
+      max-height: 80px; 
+    }
+  
+    div#medalhas h1 {
+      font-size: 24px; 
+      margin-top: 10px; 
+    }
+  
+    div#medalhas h2 {
+      font-size: 10px; 
+    }
+  
+    .timers div {
+      margin-top: 20px; 
+    }
+  
+    header {
+      font-size: 18px; 
+    }
+  
+    p {
+      font-size: 20px; 
+      padding: 10px; 
+    }
+  
+    h3 {
+      font-size: 10px; 
+      padding-top: 5px; 
+      padding-bottom: 5px; 
+    }
+  
+    div#ouro h1,
+    div#prata h1,
+    div#bronze h1 {
+      font-size: 24px; 
+    }
+  }
+  
