@@ -196,7 +196,7 @@ img {
 
   @media screen and (max-width: 768px) {
     .background-container {
-      width: 100%; 
+      width: 80%; 
       padding: 20px; 
     }
   
