@@ -15,7 +15,7 @@
 <p align="center">
    <img width="800" style="border-radius: 20px" src="assets/img/landing1.jpeg" /> <br>
 <img width="800" style="border-radius: 20px" src="assets/img/landing2.jpeg" /> <br>
-   <img width="400" style="border-radius: 20px" src="/assets/img/landing2.jpeg" />
+   <img width="400" style="border-radius: 20px" src="/assets/img/phone.jpeg" />
 </p>
 
 > Personal project, using HTML, CSS and JavaScript.
