@@ -17,7 +17,7 @@ var medalhasBrasil = {
     remo: "1920-04-20",
     rugby: "2021-07-30",
     saltosorn: "1920-04-20",
-    skate: "2020-08-05",
+    skate: "2021-08-05",
     surfe: "2021-07-27",
     taekwondo: "2016-08-29",
     tenis: "2021-07-31",
