@@ -41,7 +41,7 @@ var medalhasBrasil = {
     "tenismesa": "Tênis de Mesa",
     "saltosorn": "Saltos Ornamentais",
     "tiroarco": "Tiro com Arcos",
-    "tenis": "Tênis",
+    "tenis": "Tênis"
   };
 
   var olimpiadasModernasDeVerao = {
@@ -133,8 +133,6 @@ function formatarTempoDecorrido(milissegundos) {
   return dias;
 }
 
-var esportesArray = [];
-
 function atualizarExibicao() {
     var esportesComMedalhas = [];
     var esportesSemMedalhas = [];
@@ -163,29 +161,75 @@ function atualizarExibicao() {
     var timersSection = document.querySelector('.timers');
     timersSection.innerHTML = '';
 
+    var informacoesEsportes = {
+      hipismo: {
+        descricao: "Rodrigo Pessoa, cavaleiro brasileiro, <b>foi a primeira pessoa a receber uma medalha olímpica na cidade do Rio de Janeiro</b>. No dia 29 de agosto de 2005, muito antes do Rio de Janeiro oficializar sua candidatura às Olimpíadas de 2016, o cavaleiro teve o privilégio de receber a medalha de ouro olímpica, conquistada em Atenas 2004. A cerimônia, realizada no Forte de Copacabana, contou com a presença do então presidente do Comitê Olímpico Internacional (COI), o belga Jacques Rogge, e do presidente do Comitê Olímpico do Brasil (COB), Carlos Arthur Nuzman. <br><br>A iniciativa partiu do próprio COB, após a revisão do resultado do hipismo nas Olimpíadas de Atenas. Inicialmente, Rodrigo Pessoa <b>havia conquistado a medalha de prata</b> na competição de saltos, mas o brasileiro acabou herdando o ouro com a desclassificação do irlandês Cian O’Connor, que viu sua montaria, Waterford Crystal, ser pega em um exame antidoping por uso de tranquilizantes."
+      },
+      tiro: {
+        descricao: "A delegação brasileira liderada por Roberto Trompowsky Júnior enfrentou grandes desafios ao se dirigir à Antuérpia em 1920. Sete atiradores tiveram que descer em Portugal devido a um atraso no navio a vapor Curvello, que os deixaria sem tempo para a prova de tiro. Eles então embarcaram em um trem de Lisboa para Paris, enfrentando condições adversas em parte da viagem, sendo boa parte da viagem em um vagão descoberto, com os atletas pegando chuva e sol. Em Bruxelas, tiveram armas e munições roubadas. <br><br>Com apenas 200 balas calibre 38 para os sete atiradores, uma reviravolta ocorreu quando atletas americanos, Alfred Lane e Raymond Bracken, generosamente forneceram 2 mil cartuchos e 50 alvos.<br><br> O Brasil competiu na prova de pistola livre com Fernando Soledade. Como sua arma era muito ruim, o chefe da equipe americana de tiro, Coronel Snyders, ficou sensibilizado e cedeu duas armas fabricadas pela Colt especialmente para a competição. <br><br>Os atiradores Sebastião Wolf, Dario Barbosa, Guilherme Paraense e Afrânio da Costa fizeram um 'rodízio' com as armas e conquistaram a medalha de bronze por equipes. Afrânio também ganhou a medalha de prata individual. <br><br>O ouro veio no dia seguinte na prova de revólver (hoje chamada de tiro rápido). Guilherme Paraense, um primeiro-tenente do Exército, alcançou 274 pontos em 300, superando o americano Bracken por dois pontos. Paraense, com 36 anos, se tornou o primeiro medalhista de ouro do Brasil."
+      },
+    };
+    
     for (var i = 0; i < esportesComMedalhas.length; i++) {
-        var esporte = esportesComMedalhas[i].nome;
-        var dias = esportesComMedalhas[i].dias;
-        var nomeCompleto = esportesComMedalhas[i].nomeCompleto;
-        var dataMedalha = new Date(medalhasBrasil[esporte]);
-
-        var divEsporte = document.createElement('div');
-
-        var header = document.createElement('header');
-        var h1 = document.createElement('h1');
-        var p = document.createElement('p');
-        var h3 = document.createElement('h3');
-
-        var dataFormatada = `${dataMedalha.getDate().toString().padStart(2, '0')}.${(dataMedalha.getMonth() + 1).toString().padStart(2, '0')}.${dataMedalha.getFullYear()}`;
-        var anoOlimpiada = dataMedalha.getFullYear();
-
-        h1.textContent = 'Dias desde a última medalha em ' + nomeCompleto.charAt(0).toUpperCase() + nomeCompleto.slice(1);
-
-        // Adicionar o botão de imagem
+      var esporte = esportesComMedalhas[i].nome;
+      var dias = esportesComMedalhas[i].dias;
+      var nomeCompleto = esportesComMedalhas[i].nomeCompleto;
+      var dataMedalha = new Date(medalhasBrasil[esporte]);
+  
+      var divEsporte = document.createElement('div');
+  
+      var header = document.createElement('header');
+      var h1 = document.createElement('h1');
+      var p = document.createElement('p');
+      var h3 = document.createElement('h3');
+  
+      var dataFormatada = `${dataMedalha.getDate().toString().padStart(2, '0')}.${(dataMedalha.getMonth() + 1).toString().padStart(2, '0')}.${dataMedalha.getFullYear()}`;
+      var anoOlimpiada = dataMedalha.getFullYear();
+  
+      h1.textContent = 'Dias desde a última medalha em ' + nomeCompleto.charAt(0).toUpperCase() + nomeCompleto.slice(1);
+  
+      if (esporte in informacoesEsportes) {
         var imgButton = document.createElement('img');
-        imgButton.src = '../img/info.png';
+        imgButton.src = 'https://raw.githubusercontent.com/TomazMPP/UltimaMedalha/main/assets/img/info.png';
         imgButton.style.cursor = 'pointer';
+        imgButton.addEventListener('click', (function (esporte) {
+          return function () {
+              openInfoDisplay(esporte);
+          };
+        })(esporte));
         h1.appendChild(imgButton);
+      }
+
+        function openInfoDisplay(esporteClicado) {
+          var popupDiv = document.getElementById('popup');
+          var informacoes = obterInformacoesEsporte(esporteClicado);
+          var infoo = document.getElementById('info');
+          infoo.innerHTML = informacoes;
+          popupDiv.style.display = "block";
+      }      
+        
+        function obterInformacoesEsporte(esporteClicado) {
+          if (informacoesEsportes.hasOwnProperty(esporteClicado)) {
+            return informacoesEsportes[esporteClicado].descricao;
+          } else {
+            return "Informações não disponíveis para este esporte.";
+          }
+        }
+
+        var popupCloseButton = document.getElementById('popup-close');
+        popupCloseButton.addEventListener('click', function() {
+         var popupDiv = document.getElementById('popup');
+        popupDiv.style.display = "none";
+});
+
+        function obterInformacoesEsporte(esporteClicado) {
+          if (informacoesEsportes.hasOwnProperty(esporteClicado)) {
+            return informacoesEsportes[esporteClicado].descricao;
+          } else {
+            return "Informações não disponíveis para este esporte.";
+          }
+        }
+
 
         p.textContent = dias + ' dias';
 
@@ -236,4 +280,5 @@ function atualizarExibicao() {
         timersSection.appendChild(divEsporte);
     }
 }
+
 atualizarExibicao();
