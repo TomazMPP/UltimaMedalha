@@ -174,6 +174,12 @@ function atualizarExibicao() {
       ginastica: {
         descricao: "Rebeca Andrade conquistou a primeira medalha de ouro brasileira na categoria feminina, nas últimas olímpiadas em Toquio 2021. Ao todo, nosso país tem 6 medalhas em Ginástica, sendo 2 ouros, 3 pratas e 1 bronze."
       },
+      futebol: {
+        descricao: "A primeira medalha de ouro brasileira no futebol foi conquistada apenas em 2016, no Rio de Janeiro. Antes disso, colecionamos impressionantes 5 pratas e 2 bronzes."
+      },
+      judo: {
+        descricao: "O judô é a modalide que o Brasil possui mais medalhas, são 24 ao todo, sendo 4 ouros, 3 pratas e 17 bronzes. <br> Mesmo assim, somos apenas o décimo país no ranking desse esporte."
+      },
     };
     
     for (var i = 0; i < esportesComMedalhas.length; i++) {
