@@ -168,6 +168,12 @@ function atualizarExibicao() {
       tiro: {
         descricao: "A delegação brasileira liderada por Roberto Trompowsky Júnior enfrentou grandes desafios ao se dirigir à Antuérpia em 1920. Sete atiradores tiveram que descer em Portugal devido a um atraso no navio a vapor Curvello, que os deixaria sem tempo para a prova de tiro. Eles então embarcaram em um trem de Lisboa para Paris, enfrentando condições adversas em parte da viagem, sendo boa parte da viagem em um vagão descoberto, com os atletas pegando chuva e sol. Em Bruxelas, tiveram armas e munições roubadas. <br><br>Com apenas 200 balas calibre 38 para os sete atiradores, uma reviravolta ocorreu quando atletas americanos, Alfred Lane e Raymond Bracken, generosamente forneceram 2 mil cartuchos e 50 alvos.<br><br> O Brasil competiu na prova de pistola livre com Fernando Soledade. Como sua arma era muito ruim, o chefe da equipe americana de tiro, Coronel Snyders, ficou sensibilizado e cedeu duas armas fabricadas pela Colt especialmente para a competição. <br><br>Os atiradores Sebastião Wolf, Dario Barbosa, Guilherme Paraense e Afrânio da Costa fizeram um 'rodízio' com as armas e conquistaram a medalha de bronze por equipes. Afrânio também ganhou a medalha de prata individual. <br><br>O ouro veio no dia seguinte na prova de revólver (hoje chamada de tiro rápido). Guilherme Paraense, um primeiro-tenente do Exército, alcançou 274 pontos em 300, superando o americano Bracken por dois pontos. Paraense, com 36 anos, se tornou o primeiro medalhista de ouro do Brasil."
       },
+      voleipraia: {
+        descricao: "A 1ª medalha feminina brasileira veio junto com a 2ª. Foi apenas em 27 de julho de 1996 que uma mulher brasileira subiu ao pódio. Jaqueline Silva e Sandra Pires venceram Adriana Samuel e Mônica Rodrigues na final do vôlei de praia, na estreia olímpica da modalidade."
+      },
+      ginastica: {
+        descricao: "Rebeca Andrade conquistou a primeira medalha de ouro brasileira na categoria feminina, nas últimas olímpiadas em Toquio 2021. Ao todo, nosso país tem 6 medalhas em Ginástica, sendo 2 ouros, 3 pratas e 1 bronze."
+      },
     };
     
     for (var i = 0; i < esportesComMedalhas.length; i++) {
