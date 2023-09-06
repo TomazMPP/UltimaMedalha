@@ -13,7 +13,7 @@
 <b>(PT-BR) Aplicação sobre as medalhas recentes do Brasil em cada esporte nas Olimpíadas. Ele destaca quantos dias se passaram desde a última vitória, em qual edição das Olimpíadas isso ocorreu e fornece dados interessantes, como fatos curiosos relacionados a essas conquistas. Além disso, meu site destaca os esportes nos quais o Brasil nunca conquistou medalhas, mesmo após décadas de participação. É uma iniciativa educacional, especialmente para entusiastas de esportes e das Olimpíadas.</b>
 </p>
 <p align="center">
-   <img width="800" style="border-radius: 20px" src="assets/img/landing1.jpeg" /> <br>
+   <img width="800" style="border-radius: 20px" src="https://github.com/TomazMPP/UltimaMedalha/blob/main/assets/img/landing1.jpeg#vitrinedev" /> <br>
 <img width="800" style="border-radius: 20px" src="assets/img/landing2.jpeg" /> <br>
    <img width="400" style="border-radius: 20px" src="/assets/img/phone.jpeg" />
 </p>
@@ -39,3 +39,15 @@ Many times, I sought information about Brazil's latest medal in certain sports, 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **Última Medalha**
+| :label: Tecnologias | JavaScript, CSS
+| :rocket: URL         | hhttps://www.ultimamedalha.com.br
+
+
+## Detalhes do projeto
+
+Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
+
