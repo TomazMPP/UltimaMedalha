@@ -31,7 +31,7 @@ Many times, I sought information about Brazil's latest medal in certain sports, 
 
 👤 **Tomaz Pontes**
 
-* Website: https://tomazmpp.github.io
+* Website: https://www.tomazpont.es
 * Twitter: [@tomaz_dev](https://twitter.com/tomaz_dev)
 * Github: [@TomazMPP](https://github.com/TomazMPP)
 * LinkedIn: [@Tomaz Pontes](https://linkedin.com/in/tomaz-pontes)
