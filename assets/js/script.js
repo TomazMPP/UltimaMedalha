@@ -219,14 +219,6 @@ function atualizarExibicao() {
           infoo.innerHTML = informacoes;
           popupDiv.style.display = "block";
       }      
-        
-        function obterInformacoesEsporte(esporteClicado) {
-          if (informacoesEsportes.hasOwnProperty(esporteClicado)) {
-            return informacoesEsportes[esporteClicado].descricao;
-          } else {
-            return "Informações não disponíveis para este esporte.";
-          }
-        }
 
         var popupCloseButton = document.getElementById('popup-close');
         popupCloseButton.addEventListener('click', function() {
