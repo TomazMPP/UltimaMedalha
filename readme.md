@@ -14,7 +14,7 @@
 </p>
 <p align="center">
    <img width="800" style="border-radius: 20px" src="https://github.com/TomazMPP/UltimaMedalha/blob/main/assets/img/landing1.jpeg#vitrinedev" /> <br>
-<img width="800" style="border-radius: 20px" src="assets/img/landing2.jpeg" /> <br>
+<img width="800" style="border-radius: 20px" src="assets/img/landing2.jpeg#vitrinedev" /> <br>
    <img width="400" style="border-radius: 20px" src="/assets/img/phone.jpeg" />
 </p>
 
